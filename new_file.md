@@ -1,2 +1,3 @@
 Clean file
 
+New line
