@@ -1,0 +1,9 @@
+# the .gitignore file
+# sepcifes the name(s) of files
+# that we dont want to track in version control
+
+#clutter files / cached files:
+.DS_Store
+__pycache__
+
+# secret credentials:

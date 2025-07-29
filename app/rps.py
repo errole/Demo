@@ -1,15 +1,29 @@
 # Rock Paper Scissors Game
+import random
+VALID_OPTIONS = ['rock','paper','scissor']
 
 print("Welcome to the game!")
 
-player_choice = input("Select an option:")
+
+player_choice = input(f"Select an option {VALID_OPTIONS}:")
 print("user choice:", player_choice)
 
-import random
-
-VALID_OPTIONS = ['Rock','Paper','Scissor']
-
 computer_choice = random.choice(VALID_OPTIONS)
-print("comp choice:", computer_choice)
+print("COMPUTER CHOOSES:", computer_choice)
 
-print("Winner: To Do")
+if player_choice == computer_choice:
+    result = "TIE GAME"
+elif (player_choice == 'rock' and computer_choice == 'scissor'):
+    result = "USER WIN"
+elif (player_choice == 'rock' and computer_choice == 'paper'):
+    result = "COMP WIN"
+elif (player_choice == 'scissor' and computer_choice == 'rock'):
+    result = "COMP WIN"
+elif (player_choice == 'scissor' and computer_choice == 'paper'):
+    result = "USER WIN"
+elif (player_choice == 'paper' and computer_choice == 'scissor'):
+    result = "COMP WIN"
+elif (player_choice == 'paper' and computer_choice == 'rock'):
+    result = "USER WIN"
+    
+print(result)
