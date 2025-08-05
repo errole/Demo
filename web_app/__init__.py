@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from app.rps import determine_winner
+from app.rps import determine_winner, generate_random_choice
 
 
 app = Flask(__name__)
@@ -31,7 +31,7 @@ def results():
     # Get the user's choice from the form data
     user_choice = request.form.get('user_choice')
 
-    computer_choice = "rock" # generate_random_choice()
+    computer_choice = generate_random_choice()
 
     outcome = determine_winner(user_choice, computer_choice)
 
