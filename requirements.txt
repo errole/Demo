@@ -1,8 +1,11 @@
 # this is the "requirements.txt" files 
 # packages used in the app:
 
-#...
+# packages for the main application:
+flask
 
-
-#packages used for testing:
+# packages used for testing:
 pytest
+
+# packages used for production:
+gunicorn
