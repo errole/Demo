@@ -26,6 +26,9 @@ Play a game of rock, paper, scissors:
 ```sh
 FLASK_APP=web_app flask run
 ```
+We can access the game visiting one of the following:
+http://127.0.0.1:5000
+http://localhost:5000/
 
 ### play the game using command line
 ```sh
