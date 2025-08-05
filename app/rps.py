@@ -3,9 +3,11 @@
 import random
 VALID_OPTIONS = ['rock','paper','scissors']
 
+
 def determine_winner(player_choice, computer_choice):
     if player_choice == computer_choice:
         result = "TIE GAME"
+
     elif (player_choice == 'rock' and computer_choice == 'scissors'):
         result = "USER WIN"
     elif (player_choice == 'rock' and computer_choice == 'paper'):
