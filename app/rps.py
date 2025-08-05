@@ -1,20 +1,20 @@
 # Rock Paper Scissors Game
 
 import random
-VALID_OPTIONS = ['rock','paper','Scissors']
+VALID_OPTIONS = ['rock','paper','scissors']
 
 def determine_winner(player_choice, computer_choice):
     if player_choice == computer_choice:
         result = "TIE GAME"
-    elif (player_choice == 'rock' and computer_choice == 'Scissors'):
+    elif (player_choice == 'rock' and computer_choice == 'scissors'):
         result = "USER WIN"
     elif (player_choice == 'rock' and computer_choice == 'paper'):
         result = "COMP WIN"
-    elif (player_choice == 'Scissors' and computer_choice == 'rock'):
+    elif (player_choice == 'scissors' and computer_choice == 'rock'):
         result = "COMP WIN"
-    elif (player_choice == 'Scissors' and computer_choice == 'paper'):
+    elif (player_choice == 'scissors' and computer_choice == 'paper'):
         result = "USER WIN"
-    elif (player_choice == 'paper' and computer_choice == 'Scissors'):
+    elif (player_choice == 'paper' and computer_choice == 'scissors'):
         result = "COMP WIN"
     elif (player_choice == 'paper' and computer_choice == 'rock'):
         result = "USER WIN"
